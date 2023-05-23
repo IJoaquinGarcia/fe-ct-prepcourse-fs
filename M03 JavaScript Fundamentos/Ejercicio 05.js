@@ -26,14 +26,14 @@ function combinarNombres(nombre, apellido) {
    // Retorna "nombre" y "apellido" combinados en un mismo string pero separados por un espacio.
    // Ejemplo: ("Soy", "Henry") ---> "Soy Henry"
    // Tu código:
-   return (nombre) + (apellido); 
+   return (nombre + ' ' + apellido); 
 }
 
 function obtenerSaludo(nombre) {
    // Toma el string "nombre" y concatena otra string en la cadena para que tome la siguiente forma:
    // Ejemplo: "Martin" ---> "Hola Martin!"
    // Tu código:
-   return ('Hola ' + nombre + '!');
+   return ('Hola' + ' ' + nombre + '!');
 }
 
 
@@ -63,6 +63,9 @@ function deEuroAdolar(euro) {
    // Supongamos que 1 euro equivale a 1.20 dólares.
    // Debes calcular el valor recibido como argumento pasándolo a dolares.
    // Tu código:
+   var cambio = 1.20;
+   var dolares = euro * cambio;
+   return dolares;
 }
 
 function esVocal(letra) {
@@ -70,10 +73,11 @@ function esVocal(letra) {
    // Si el usuario ingresa un string de más de un caracter debes retornar el mensaje: "Dato incorrecto".
    // Si no es vocal, tambien debe retornar "Dato incorrecto".
    // Tu código:
-   if (letra == a , e, i, o, u) return ('Es vocal')
-   else if (letra != a , e, i, o, u) return ('Dato incorrecto')
-   else if (letra == ab) return ('Dato incorrecto')
+   if (letra === "a" || letra === 'e'|| letra === 'i'|| letra === 'o'|| letra === 'u'){return ('Es vocal')}
+   else if (' ') {return('Dato incorrecto')
+   }
 }
+esVocal('a');
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
